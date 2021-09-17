@@ -7,6 +7,13 @@
         "server": "nodemon server/expressServer.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
+    "nodemonConfig": {
+        "ignore": [
+            "test/*",
+            "docs/*"
+        ],
+        "ext": "js, mjs, html"
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/lebronjs/testing.git"
@@ -18,7 +25,9 @@
     },
     "homepage": "https://github.com/lebronjs/testing#readme",
     "dependencies": {
-        "express": "^4.17.1"
+        "connect-livereload": "^0.6.1",
+        "express": "^4.17.1",
+        "livereload": "^0.9.3"
     },
     "devDependencies": {
         "nodemon": "^2.0.2"
